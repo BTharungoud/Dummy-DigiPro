@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <!-- Header content as per your provided HTML -->
+    <div class="logo">
+      <a href="">
+        <!-- <img src="images/logo.png" alt="Logo"> -->
+        <img src="https://res.cloudinary.com/douitd8ad/image/upload/v1719916467/Vector_Smart_orange_hm5olx.png">
+      </a>
+    </div>
+    <div class="toggle-search-icon" style="display: flex;">
+      <div class="nav-search-icon">
+        <div class="container-search">
+          <form role="search" method="get" class="search-form-icon" action="">
+            <label>
+              <input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:" />
+            </label>
+            <input type="submit" class="search-submit" value="Search" />
+          </form>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/services" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>
+            Services</b>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/service/digital-marketing">Digital Marketing <i class="fa-solid fa-arrow-right" style="color: #fafafa; float: right;"></i></a>
+            <a class="dropdown-item" href="/service/web-app-development">Web/App Development <i class="fa-solid fa-arrow-right" style="color: #fafafa; float: right;"></i></a>
+            <a class="dropdown-item" href="/service/graphic-ui-design">Graphic/UI Design <i class="fa-solid fa-arrow-right" style="color: #fafafa; float: right;"></i></a>
+            <a class="dropdown-item" href="/service/consulting">Consulting <i class="fa-solid fa-arrow-right" style="color: #fafafa; float: right;"></i></a>
+            <a class="dropdown-item" href="/service/influencer-market">Influencer Marketing <i class="fa-solid fa-arrow-right" style="color: #fafafa; float: right;"></i></a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/careers" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>
+            Careers</b>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/careers/training">Training <i class="fa-solid fa-arrow-right" style="color: #fafafa; float: right;"></i></a>
+            <a class="dropdown-item" href="/careers/internship">Internship <i class="fa-solid fa-arrow-right" style="color: #fafafa; float: right;"></i></a>
+            <a class="dropdown-item" href="/careers/job-opportunity">Job Opportunities <i class="fa-solid fa-arrow-right" style="color: #fafafa; float: right;"></i></a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/portfolio"><b>Portfolio</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blogs"><b>Blogs</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about-us"><b>About us</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/consult-us"><b>Consult us</b></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-sm-0">
+        <input class="form-control mr-xl-2" type="search" placeholder="&#xF002; Search" value="" name="s" title="Search for:" style="font-family:Arial, FontAwesome; width: 45%;" aria-label="Search">
+        <button type="button" class="login-btn" data-toggle="modal" data-target="#exampleModal">Log in</button>
+        <button type="button" class="signup-btn" data-toggle="modal" data-target="#exampleModal1">Sign Up</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-m">
+      <div class="modal-content">
+         <div class="modal-body" style="border-radius: 20px;">
+            <div class="modal-login">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true"><i class="fa-solid fa-circle-xmark"></i></span>
+               </button>
+               <h1>Sign up</h1>
+               <p>Register to log in to your admin panel</p>
+               <label>Email</label>
+               <input type="email" name="uname" placeholder="example@gmail.com" required/>
+               <div class="signup-psw">
+                  <div class="signup-password">
+                     <label>Password</label>
+                     <input type="password" name="psw" placeholder="Your Password" required/>
+                  </div>
+                  <div class="signup-confirm-password">
+                     <label>Confirm Password</label>
+                     <input type="password" name="psw" placeholder="Confirm Password" required/>
+                  </div>
+               </div>
+               <label>
+               <input type="checkbox" checked="checked" name="remember"> I have read and accept terms and conditions
+               </label>
+               <button id="btn-login">Sign Up</button>
+               <button id="btn-g-login">Sign Up with Google</button>
+               <p>Have an account? <a data-toggle="modal" data-target="#exampleModal"><b>Sign in</b></a></p>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-m">
+       <div class="modal-content">
+           <div class="modal-body" style="border-radius: 20px;">
+               <div class="modal-login">
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true"><i class="fa-solid fa-circle-xmark"></i></span>
+                   </button>
+                   <h1>Welcome back!</h1>
+                   <p>Enter your username and password to log in to your admin panel</p>
+                   <label>Email</label>
+                   <input type="email" name="uname" placeholder="example@gmail.com" required/>
+                   <label>Password</label>
+                   <input type="password" name="psw" placeholder="Your Password" required/>
+                   <label>
+                   <input type="checkbox" checked="checked" name="remember"> Remember me
+                   </label>
+                   <button id="btn-login">Log in</button>
+                   <button id="btn-g-login">Log in with Google</button>
+                   <p>Don't have an account yet? <a data-toggle="modal" data-hide="#exampleModal" data-target="#exampleModal1"><b>Sign Up</b></a></p>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+
+  <!-- Main content -->
+  <div *ngIf="!isServiceRoute">
+    <main role="main" class="container-fluid">
+    </main>
+    <div class="homepage-bg-container">
+        <div class="home-header">
+           <div class="home-container">
+              <div class="home-content">
+                <video autoplay muted loop>
+                    <source src="https://res.cloudinary.com/douitd8ad/video/upload/v1719991105/171910-846103587_medium_foqzto.mp4" type="video/webm">
+                </video>
+                <div class="main-heading">
+                    <h2>IAM <span class="spa">DIGIPRO</span></h2>
+                    <p class="span1">Adding value to your name,  company and brand</p>
+                    <button type="submit" data-toggle="modal" data-target="#exampleModal2">Get in touch <i class="fa-solid fa-arrow-right" style="color: #fafafa;"></i></button>
+                </div>
+              </div>
+           </div>
+        </div>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-m">
+               <div class="modal-body" style="border-radius: 20px;">
+                  <div class="modal-content" style="border-radius: 20px;">
+                     <div class="enquiry-card-container1">
+                        <form>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"><i class="fa-solid fa-circle-xmark cl-icon"  style="float: right; color: white;" ></i></span>
+                              </button>
+                              <h2>I am Interested in</h2>
+                              <div class="interest-buttons1">
+                                  <div>
+                                    <button type="button" style="font-size: x-small">Digital Marketing</button>
+                                    <button type="button" style="font-size: x-small">Web Development</button>
+                                    <button type="button" style="font-size: x-small">Graphic Design</button>
+                                    <button type="button" style="font-size: x-small">Consulting</button>
+                                    <button type="button" style="font-size: x-small">Influencer Marketing</button>
+                                  </div>
+                              </div>
+                              <label for="name">I am</label>
+                              <input type="text" id="name" name="name" placeholder="John" required>
+                              <label for="Phone">Phone number</label>
+                              <input type="phone" id="phone" name="phone" required>
+                              <label for="email">Email <span style="color:rgb(109, 109, 108);">(Optional)</span></label>
+                              <input type="email" id="email" name="email" placeholder="iam@gmail.com">
+                              <button type="submit" class="enquiry-send-button1" style="font-size: small">Send</button>
+                              </form>                              
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div> 
+     </div>
+     
+
+     <!-- scrolling add -->
+<div class="scrolling-text-container1">
+    <div class="scrolling-text-inner1" style="--marquee-speed: 20s; --direction:scroll-left" role="marquee">
+       <div class="scrolling-text1"></div>
+       <div class="scrolling-text-item1"><i class="fa-regular fa-face-smile"></i></div>
+                <div class="scrolling-text-item1">Boost Your Brand Online Effectively with <b>Digital Marketing Web/App Development Graphic/UI Design Consulting Influencer Marketing</b></div>
+                <div class="scrolling-text-item1"><i class="fa-regular fa-face-smile"></i></div>
+                <div class="scrolling-text-item1">Boost Your Brand Online Effectively with <b>Digital Marketing Web/App Development Graphic/UI Design Consulting Influencer Marketing</b></div>
+                <div class="scrolling-text-item1"><i class="fa-regular fa-face-smile"></i></div>
+                <div class="scrolling-text-item1">Boost Your Brand Online Effectively with <b>Digital Marketing Web/App Development Graphic/UI Design Consulting Influencer Marketing</b></div>
+                <div class="scrolling-text-item1"><i class="fa-regular fa-face-smile"></i></div>
+                <div class="scrolling-text-item1">Boost Your Brand Online Effectively with <b>Digital Marketing Web/App Development Graphic/UI Design Consulting Influencer Marketing</b></div>
+                <div class="scrolling-text-item1"><i class="fa-regular fa-face-smile"></i></div>
+                <div class="scrolling-text-item1">Boost Your Brand Online Effectively with <b>Digital Marketing Web/App Development Graphic/UI Design Consulting Influencer Marketing</b></div>
+                <div class="scrolling-text-item1"><i class="fa-regular fa-face-smile"></i></div>
+                <div class="scrolling-text-item1">Boost Your Brand Online Effectively with <b>Digital Marketing Web/App Development Graphic/UI Design Consulting Influencer Marketing</b></div>
+                <div class="scrolling-text-item1"><i class="fa-regular fa-face-smile"></i></div>
+                <div class="scrolling-text-item1">Boost Your Brand Online Effectively with <b>Digital Marketing Web/App Development Graphic/UI Design Consulting Influencer Marketing</b></div>
+                <div class="scrolling-text-item1"><i class="fa-regular fa-face-smile"></i></div>
+                <div class="scrolling-text-item1">Boost Your Brand Online Effectively with <b>Digital Marketing Web/App Development Graphic/UI Design Consulting Influencer Marketing</b></div>
+                <div class="scrolling-text-item1"><i class="fa-regular fa-face-smile"></i></div>
+                <div class="scrolling-text-item1">Boost Your Brand Online Effectively with <b>Digital Marketing Web/App Development Graphic/UI Design Consulting Influencer Marketing</b></div>
+                <div class="scrolling-text-item1"><i class="fa-regular fa-face-smile"></i></div>
+                <div class="scrolling-text-item1">Boost Your Brand Online Effectively with <b>Digital Marketing Web/App Development Graphic/UI Design Consulting Influencer Marketing</b></div>
+                <div class="scrolling-text-item1"><i class="fa-regular fa-face-smile"></i></div>
+                <div class="scrolling-text-item1">Boost Your Brand Online Effectively with <b>Digital Marketing Web/App Development Graphic/UI Design Consulting Influencer Marketing</b></div>
+                <div class="scrolling-text-item1"><i class="fa-regular fa-face-smile"></i></div>
+                <div class="scrolling-text-item1">Boost Your Brand Online Effectively with <b>Digital Marketing Web/App Development Graphic/UI Design Consulting Influencer Marketing</b></div>
+                <div class="scrolling-text-item1"><i class="fa-regular fa-face-smile"></i></div>
+    </div>
+ </div>
+<!--about-->
+<div class="about-container">
+    <!-- <div class="arrow">
+       <i class="fa-solid fa-arrow-right arr-right"></i>
+       <h1 class="services-ser">About</h1>
+    </div> -->
+    <div class="about-content-text">
+       <div class="text">
+          <h1 class="about-heading">Transforming Visions into Reality</h1>
+          <p class="about-description">Discover how IAM DIGIPRO empowers businesses with expert digital marketing and consulting, fostering growth and excellence.</p>
+          <div>
+             <a href="/about-us"><button class="get-started-button">Explore our journey and meet our team!<i class="fas fa-arrow-right get-started-button-arrow pt-2 pb-2"></i></button></a>
+          </div>
+       </div>
+       <div class="about-image-content">
+          <img src="images/dm&consult.jpeg" alt="digital marketing & consulting" class="about-image" alt="About Image">
+       </div>
+    </div>
+    <div class="achievements1">
+       <h1 class="achievements">
+          Our Expertise and Achievements
+       </h1>
+       <div class="projects">
+          <div class="pro-con">
+             <h1 class="head5">
+                50+
+             </h1>
+             <p class="head6">
+                Projects
+             </p>
+          </div>
+          <div class="pro-con">
+             <h1 class="head5">
+                +546%
+             </h1>
+             <p class="head6">
+                Conversion rate
+             </p>
+          </div>
+          <div class="pro-con">
+             <h1 class="head5">
+                1500+
+             </h1>
+             <p class="head6">
+                Leads 
+             </p>
+          </div>
+          <div class="pro-con">
+             <h1 class="head5">
+                250%+
+             </h1>
+             <p class="head6">
+                Unit Sales
+             </p>
+          </div>
+       </div>
+    </div>
+ </div>
+ <!-- Book -->
+<div class="section back-dark2" id="about">
+    <div class="offer-rapper-one position-relative pt-0 pb-0 md-pt-10 md-pb-10">
+       <iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe" style="border: 1px solid lightgray; width: 100%; height: 600px;" src="https://heyzine.com/flip-book/37c8e77b3f.html"></iframe>
+    </div>
+ </div>
+    <div class="content" id="section1" onclick="display1()">
+    <div class="sercives-container">
+       <div class="service-container1">
+          <div class="service-container2">
+             <i class="fa-solid fa-arrow-right arr-right rig"></i>
+             <h1 class="service-heading">Services</h1>
+             <h2 class="ser-hed">What we offer</h2>
+          </div>
+          <div class="card-ser-container">
+             <div class="list-ser">
+                <p class="ser-para">01</p>
+                <h3 class="dig-head">Digital Marketing</h3>
+                <p class="ser-par">We enhance your online presence and drive engagement through advanced SEO, social media, content marketing, and paid advertising strategies.</p>
+                <div>
+                   <a href="SEOserviceKnowmorePage.html"><button class="btn-option">Search Engine Optimization</button></a>
+                   <a href="PPCKnowmorePage.html"><button class="btn-option">Pay-Per-Click</button></a>
+                   <a href="SocialmediaKnowmorePage.html"><button class="btn-option">Social Media Marketing</button></a>
+                   <a href="contentMarketingKnowmorePage.html"><button class="btn-option">Content Marketing</button></a>
+                   <a href="emailMarketingKnowmorePage.html"><button class="btn-option">Email Marketing</button></a>
+                </div>
+                <div class="btn-container">
+                   <a href="/service/digital-marketing"><button class="explore-button">Explore <i class="fa-solid fa-arrow-right arr-right right"></i></button></a>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div class="explore-container">
+          <div>
+             <h2 class="ser-hed">What you get</h2>
+             <img src="https://res.cloudinary.com/douitd8ad/image/upload/v1720602984/1_lcne5s.png" alt="digitalmarketingrevenue">
+          </div>
+       </div>
+    </div>
+  </div>
+  <div class="content" id="section2" onclick="display2()" style="display: none;">
+    <div class="sercives-container">
+       <div class="service-container1">
+          <div class="service-container2">
+             <i class="fa-solid fa-arrow-right arr-right rig"></i>
+             <h1 class="service-heading">Services</h1>
+             <h2 class="ser-hed">What we offer</h2>
+          </div>
+          <div class="card-ser-container">
+             <div class="list-ser">
+                <p class="ser-para">02</p>
+                <h3 class="dig-head">Web/App
+                   <br/>Development
+                </h3>
+                <p class="ser-par">We create responsive, user-friendly websites using the latest technologies to ensure they are fast, secure, and scalable.</p>
+                <a href="frontendDesignKnowmorePage.html"><button class="btn-option">Frontend Developer</button></a>
+                <a href="backendDesignKnowmorePage.html"><button class="btn-option">Backend Developer</button></a>
+                <a href="FullstackKnowmorePage.html"><button class="btn-option">Full-stack Developer</button></a>
+                <a href="appDevelopmentKnowmorePage.html"><button class="btn-option">App Developer</button></a>
+                <div class="btn-container">
+                   <a href="WebDevelopment.html"><button class="explore-button">Explore <i class="fa-solid fa-arrow-right arr-right right"></i></button></a>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div class="explore-container section2">
+          <div>
+             <h2 class="ser-hed">What you get</h2>
+             <img src="images/trendingservices.png" alt="trendingservices">
+          </div>
+       </div>
+    </div>
+    </div>
+    <div class="content" id="section3" onclick="display3()" style="display: none;">
+        <div class="sercives-container">
+           <div class="service-container1">
+              <div class="service-container2">
+                 <i class="fa-solid fa-arrow-right arr-right rig"></i>
+                 <h1 class="service-heading">Services</h1>
+                 <h2 class="ser-hed">What we offer</h2>
+              </div>
+              <div class="card-ser-container">
+                 <div class="list-ser">
+                    <p class="ser-para">03</p>
+                    <h3 class="dig-head">Graphic / UI 
+                       <br/>Design
+                    </h3>
+                    <p class="ser-par">Our graphic design services establish a strong brand identity with visually stunning, high-quality designs that captivate and engage your audience.</p>
+                    <div>
+                       <a href="brandingKnowmorePage.html"><button class="btn-option">Branding</button></a>
+                       <a href="logodesignKnowmorePage.html"><button class="btn-option">Logo Design</button></a>
+                       <a href="UI-UXKnowmorePage.html"><button class="btn-option">UI/UX Design</button></a>
+                    </div>
+                    <div class="btn-container">
+                       <a href="graphicDesign.html"><button class="explore-button">Explore <i class="fa-solid fa-arrow-right arr-right right"></i></button></a>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <div class="explore-container section3">
+              <div>
+                 <h2 class="ser-hed">What you get</h2>
+                 <img src="images/percentagebreakdown.png" alt="percentagebreakdown">
+              </div>
+           </div>
+        </div>
+     </div>
+     <div class="content" id="section4" onclick="display4()" style="display: none;">
+        <div class="sercives-container">
+           <div class="service-container1">
+              <div class="service-container2">
+                 <i class="fa-solid fa-arrow-right arr-right rig"></i>
+                 <h1 class="service-heading">Services</h1>
+                 <h2 class="ser-hed">What we offer</h2>
+              </div>
+              <div class="card-ser-container">
+                 <div class="list-ser">
+                    <p class="ser-para">04</p>
+                    <h3 class="dig-head">Consulting</h3>
+                    <p class="ser-par">Our consulting services offer expert advice and strategic insights to help with digital transformation, process optimization, and strategic planning.</p>
+                    <div>
+                       <a href="businessStrategyKnowmorePage.html"><button class="btn-option">Business Strategy</button></a>
+                       <a href="digitalTransformationKnowmorePage.html"><button class="btn-option">Digital Transformation</button></a>
+                    </div>
+                    <div class="btn-container">
+                       <a href="consultingServices.html"><button class="explore-button">Explore <i class="fa-solid fa-arrow-right arr-right right"></i></button></a>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <div class="explore-container section4">
+              <div>
+                 <h2 class="ser-hed">What you get</h2>
+                 <img src="images/percentagebreakdownprojects.png" alt="percentagebreakdownprojects">
+              </div>
+           </div>
+        </div>
+     </div>
+     <div class="content" id="section5" onclick="display5()" style="display: none;">
+        <div class="sercives-container">
+           <div class="service-container1">
+              <div class="service-container2">
+                 <i class="fa-solid fa-arrow-right arr-right rig"></i>
+                 <h1 class="service-heading">Services</h1>
+                 <h2 class="ser-hed">What we offer</h2>
+              </div>
+              <div class="card-ser-container">
+                 <div class="list-ser">
+                    <p class="ser-para">05</p>
+                    <h3 class="dig-head">Influencer
+                       <br/>Marketing
+                    </h3>
+                    <p class="ser-par">We connect you with the right influencers to amplity your brand's message and reach a wider audience through data-driven, tailored strategies for maximum impact and ROl.</p>
+                    <div>
+                       <a href="campaignStrategyKnowmorePage.html"><button class="btn-option">Campaign Strategy</button></a>
+                       <a href="influencerOutreachKnowmorePage.html"><button class="btn-option">Influencer Outreach</button></a>
+                       <a href="brandKPartnershipnowmorePage.html"><button class="btn-option">Brand Partnership</button></a>
+                       <a href="ContentCreationKnowmorePage.html"><button class="btn-option">Content Creating</button></a>
+                    </div>
+                    <div class="btn-container">
+                       <a href="influencerMarketingServices.html"><button class="explore-button">Explore <i class="fa-solid fa-arrow-right arr-right right"></i></button></a>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <div class="explore-container section5">
+              <div>
+                 <h2 class="ser-hed">What you get</h2>
+                 <img src="images/resultsfromclients.png" alt="resultsfromclients">
+              </div>
+           </div>
+        </div>
+     </div>
+     <!-- careers -->
+<div>
+    <!-- <div class="arrow" style="margin-left: 40px; margin-top: 50px;">
+       <i class="fa-solid fa-arrow-right arr-right"></i>
+       <h1 class="services-ser">Careers</h1>
+    </div> -->
+    <div class="careers-container">
+       <div class="careers-card-container">
+          <div class="careers-card">
+             <h2>Internships</h2>
+             <p>Gain real-world experience in digital marketing, web development, graphic design, consulting, and influencer marketing. Work with industry experts, develop your skills, and contribute to impactful projects. Apply now to kickstart your career with us!</p>
+             <a href="/careers/internship" class="careers-arrow-btn"><i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="careers-card">
+             <h2>Training Courses</h2>
+             <p>Gain real-world experience and comprehensive training in digital marketing, web development, graphic design, consulting, and influencer marketing. Work with industry experts, enhance your skills, and contribute to impactful projects. Apply now to kickstart your career with us!</p>
+             <a href="/careers/training" class="careers-arrow-btn"><i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="careers-card">
+             <h2>Job Opportunities</h2>
+             <p>Discover rewarding career paths in digital marketing, web development, graphic design, consulting, and influencer marketing. Join our dynamic team, collaborate with industry experts, and contribute to innovative projects. Take the next step in your career journey with us. Apply now!</p>
+             <a href="/careers/job-opportunity" class="careers-arrow-btn"><i class="fas fa-arrow-right"></i></a>
+          </div>
+       </div>
+    </div>
+ </div>
+  <!-- to whom we offer scrolling text-->
+  <h1 class="to-whom-we-offer">To whom we offer</h1>
+  <div class="scrolling-text-container2 ">
+    <div class="scrolling-text-inner2">
+    <a href="portfolio.html" style="text-decoration: none;"><div class="scrolling-text2">
+            <div class="scrolling-text-item2">Health Care</div>
+            <div class="scrolling-text-item3">•</div>
+            <div class="scrolling-text-item2">Website Development Software Companies</div>
+            <div class="scrolling-text-item3">•</div>
+            <div class="scrolling-text-item2">Edutech</div>
+            <div class="scrolling-text-item3">•</div>
+            <div class="scrolling-text-item2">Interior Designing</div>
+            <div class="scrolling-text-item3">•</div>
+            <div class="scrolling-text-item2">Overseas Consultancies</div>
+            <div class="scrolling-text-item3">•</div>
+            <div class="scrolling-text-item2">Realestate</div>
+            <div class="scrolling-text-item3">•</div>
+            <div class="scrolling-text-item2">Influencers</div>
+            <div class="scrolling-text-item3">•</div>
+            <div class="scrolling-text-item2">Grooming Influencers</div>
+            <div class="scrolling-text-item3">•</div>
+            <div class="scrolling-text-item2">Personal Bonding</div>
+        </div></a>
+    </div>
+</div>
+    <!-- reviews -->
+    <!-- <div class="arrow" style="margin-top: 50px; margin-left: 40px;">
+        <i class="fa-solid fa-arrow-right arr-right"></i>
+        <h1 class="services-ser">Reviews</h1>
+    </div> -->
+    <div class="testimonials-bg-container">
+        <!-- <h1 align="center">Over 100,000 Marketers Trust Our Programs</h1> -->
+        <div class="testimonials-details-container">
+           <div class="testimonials-card-container">
+              <div class="client-image-container">
+                 <h5>Priya R.</h5>
+                 <h6>Small Business Owner</h6>
+                 <div class="rev-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                 </div>
+                 <hr>
+                 <P>IamDigiPro has been a game-changer for my business. Their digital marketing strategies have significantly increased our online presence. The team is professional, responsive, and truly understands our needs. I highly recommend their services!</P>
+              </div>
+              <div class="client-image-container">
+                 <h5>Rohan S.</h5>
+                 <h6>Marketing Manager</h6>
+                 <div class="rev-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                 </div>
+                 <hr>
+                 <P>Working with IamDigiPro has been a fantastic experience. Their expertise in SEO and PPC campaigns has driven measurable results. Our traffic and conversions have skyrocketed, and we couldn't be happier. They are a valuable partner in our digital journey.</P>
+              </div>
+              <div class="client-image-container">
+                 <h5> Neha T.</h5>
+                 <h6>Entrepreneur</h6>
+                 <div class="rev-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                 </div>
+                 <hr>
+                 <P>I was impressed with IamDigiPro's approach to social media marketing. They created engaging content that resonated with our audience, resulting in higher engagement and sales. Their attention to detail and creativity set them apart from other agencies.</P>
+              </div>
+              <div class="client-image-container">
+                 <h5>Vijay K.</h5>
+                 <h6>eCommerce Store Owner</h6>
+                 <div class="rev-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                 </div>
+                 <hr>
+                 <P>IamDigiPro's content marketing services have been invaluable. They produced high-quality blog posts and videos that positioned our brand as an industry leader. The increase in organic traffic and leads speaks volumes about their effectiveness.</P>
+              </div>
+              <div class="client-image-container">
+                 <h5>Anjali M.</h5>
+                 <h6>CEO</h6>
+                 <div class="rev-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                 </div>
+                 <hr>
+                 <P>The team at IamDigiPro is exceptional. Their email marketing campaigns are personalized and effective, driving customer retention and sales. Their analytical approach and detailed reporting helped us make informed decisions. We are thrilled with the results</P>
+              </div>
+              <div class="client-image-container">
+                 <h5>Arun B.</h5>
+                 <h6>Founder</h6>
+                 <div class="rev-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                 </div>
+                 <hr>
+                 <P>IamDigiPro's comprehensive digital marketing services are top-notch. From SEO to social media marketing, they provided us with customized solutions that aligned with our goals. Their professionalism and dedication have made a significant impact on our business.</P>
+              </div>
+              <div class="client-image-container">
+                 <h5>Meena p.</h5>
+                 <h6>Brand Manager</h6>
+                 <div class="rev-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                 </div>
+                 <hr>
+                 <P>IamDigiPro's expertise in digital marketing is unparalleled. They helped us understand our audience better and tailored strategies that boosted our online presence. Their commitment to our success and innovative solutions make them an outstanding partner.</P>
+              </div>
+              <div class="client-image-container">
+                 <h5>Sanya G.</h5>
+                 <h6>Freelance Consultant</h6>
+                 <div class="rev-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                 </div>
+                 <hr>
+                 <P>As a freelance consultant, I needed a robust digital strategy to attract clients. IamDigiPro delivered beyond my expectations. Their targeted campaigns and SEO expertise have made me more visible online, and my client base has grown significantly.</P>
+              </div>
+              <div class="client-image-container">
+                 <h5>Megha D.</h5>
+                 <h6>Marketing Director</h6>
+                 <div class="rev-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                 </div>
+                 <hr>
+                 <P>IamDigiPro's social media management is fantastic. They understand our brand voice and consistently produce content that engages our audience. Our social media following has grown, and we've seen a direct increase in inquiries and sales.</P>
+              </div>
+              <div class="client-image-container">
+                 <h5>Tanvi L.</h5>
+                 <h6>Product Manager</h6>
+                 <div class="rev-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                 </div>
+                 <hr>
+                 <P>The insights and strategies provided by IamDigiPro have been incredibly valuable. Their data-driven approach to digital marketing has optimized our campaigns and maximized our ROI. They truly know what they're doing and deliver results.</P>
+              </div>
+              <div class="client-image-container">
+                 <h5>Rajesh P.</h5>
+                 <h6>Owner of a Boutique</h6>
+                 <div class="rev-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                 </div>
+                 <hr>
+                 <P>I was struggling with online visibility until I partnered with IamDigiPro. Their local SEO strategies helped my boutique rank higher on search engines, attracting more foot traffic and online orders. I couldn't be happier with their service.</P>
+              </div>
+              <div class="client-image-container">
+                 <h5>Kavita S.</h5>
+                 <h6>Software Developer</h6>
+                 <div class="rev-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                 </div>
+                 <hr>
+                 <P>IamDigiPro's digital marketing course was eye-opening. Their practical approach and real-time project experience equipped me with the skills I needed to market my software solutions effectively. It's a must for anyone looking to master digital marketing.</P>
+              </div>
+              <div class="client-image-container">
+                 <h5>Shyam V.</h5>
+                 <h6>Event Planner</h6>
+                 <div class="rev-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                 </div>
+                 <hr>
+                 <P>Thanks to IamDigiPro, my event planning business has a thriving online presence. Their content marketing and SEO strategies have driven traffic to my site and increased bookings. Their team is knowledgeable, friendly, and always ready to help.</P>
+              </div>
+              <div class="client-image-container">
+                 <h5>Deepa K.</h5>
+                 <h6>Restaurateur</h6>
+                 <div class="rev-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                 </div>
+                 <hr>
+                 <P>IamDigiPro revamped our online marketing strategy, and the results were immediate. Our restaurant now enjoys a steady stream of new customers thanks to their social media campaigns and local SEO efforts. They're worth every penny.</P>
+              </div>
+              <div class="client-image-container">
+                 <h5>Anil J.</h5>
+                 <h6>Fitness Coach</h6>
+                 <div class="rev-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                 </div>
+                 <hr>
+                 <P>I needed help to build my brand online, and IamDigiPro came to the rescue. Their influencer marketing and content strategies positioned me as a thought leader in the fitness industry. My client base has expanded, and my brand has never been stronger.</P>
+              </div>
+              <div class="client-image-container">
+                 <h5>Deepa K.</h5>
+                 <h6>Restaurateur</h6>
+                 <div class="rev-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                 </div>
+                 <hr>
+                 <P>IamDigiPro revamped our online marketing strategy, and the results were immediate. Our restaurant now enjoys a steady stream of new customers thanks to their social media campaigns and local SEO efforts. They're worth every penny.</P>
+              </div>
+              <div class="client-image-container">
+                 <h5>Anil J.</h5>
+                 <h6>Fitness Coach</h6>
+                 <div class="rev-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                 </div>
+                 <hr>
+                 <P>I needed help to build my brand online, and IamDigiPro came to the rescue. Their influencer marketing and content strategies positioned me as a thought leader in the fitness industry. My client base has expanded, and my brand has never been stronger.</P>
+              </div>
+           </div>
+        </div>
+     </div>
+ <!--clients-->
+ <div style="margin-top: 0px;">
+    <!-- <div class="arrow" style="margin-left: 40px;">
+        <i class="fa-solid fa-arrow-right arr-right"></i>
+        <h1 class="services-ser">Clients</h1>
+    </div> -->
+    <div class="clients-container">
+        <h2 class="client-heading">Trusted Companies We Proudly Work With</h2>
+        <div class="client-logos">
+            <img src="https://res.cloudinary.com/douitd8ad/image/upload/v1719212523/align_td4afg.jpg" alt="Align">
+            <img src="https://res.cloudinary.com/douitd8ad/image/upload/v1719213475/ceridian_mmbcc6.png" alt="Ceridian">
+            <img src="https://res.cloudinary.com/douitd8ad/image/upload/v1719204512/carrier_w7a1cx.png" alt="Carrier">
+            <img src="https://res.cloudinary.com/douitd8ad/image/upload/v1719213484/Charter_nddmh2.png" alt="Charter" width="500px" height="600px">
+            <img src="https://res.cloudinary.com/douitd8ad/image/upload/v1719213445/atmos_energy_yzyybg.png" alt="Atmos Energy">
+            <img src="https://res.cloudinary.com/douitd8ad/image/upload/v1719213465/Broadridge_xbvnl0.png" alt="Broadridge">
+            <img src="https://res.cloudinary.com/douitd8ad/image/upload/v1719213430/Ametek_heuiux.png" alt="Ametek">
+            <img src="https://res.cloudinary.com/douitd8ad/image/upload/v1719213457/AXON_dofppc.png" alt="Axon">
+        </div>
+    </div>
+</div>
+ <!--enquiry form-->
+ <div class="enquiry-container mt-5" style="margin-bottom: 12vw;">
+    <div class="enquiry-form">
+        <!-- <div class="arrow" style="margin-left: 40px;">
+            <i class="fa-solid fa-arrow-right arr-right"></i>
+            <h1 class="services-ser">Enquiry</h1>
+        </div> -->
+        <div class="left-side">
+            <p>Ready to elevate your <br> brand online? <br>
+            <span class="span">Get a Free Consultation<br> Today!</span></p>
+        </div>
+        <div class="enquiry-background-container">
+            <h1 class="enquiry-heading">Let's Collab <i class="fa-solid fa-arrow-right" style="color: white;"></i></h1>
+        </div>
+    </div>
+    <div class="enquiry-card-container" style="margin-top: 13vw; margin-bottom: 10vw;">
+        <form>
+            <h2>I am Interested in</h2>
+            <div class="interest-buttons">
+                <div>
+                    <button type="button"><span> Marketing</span></button>
+                    <button type="button"><span>Web Development</span></button>
+                </div>
+                <div>
+                    <button type="button"><span>Graphic Design</span></button>
+                    <button type="button"><span>Consulting</span></button>
+                    <button type="button"><span>Influencer Marketing</span></button>
+                </div>
+            </div>
+            <label for="name">I am</label>
+            <input type="text" id="name" name="name" placeholder="John" required>
+            <label for="Phone">Phone number</label>
+            <input type="phone" id="phone" name="phone" required>
+            <label for="email">Email <span style="color:rgb(109, 109, 108);">(Optional)</span></label>
+            <input type="email" id="email" name="email" placeholder="iam@gmail.com">
+            <button type="submit" class="enquiry-send-button"><span>Send</span></button>
+        </form>
+    </div>
+</div>
+ <!-- FAQs -->
+
+ <div class="faq-container" style="margin-top:100px;">
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>What is digital marketing and why is it important for my business?</span>
+        
+            <div class="number-circle"> <button class="toggle-btn">+</button></div>
+
+        </div>
+        <div class="faq-answer">
+            <p>Digital marketing encompasses all marketing efforts that use the internet or an electronic device. It is important because it allows businesses to reach a larger audience, target specific demographics, and measure the effectiveness of their campaigns in real time.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>What is the process for developing a website with your company?</span>
+        
+            <div class="number-circle"> <button class="toggle-btn">+</button></div>
+        </div>
+        <div class="faq-answer">
+            <p>Digital marketing encompasses all marketing efforts that use the internet or an electronic device. It is important because it allows businesses to reach a larger audience, target specific demographics, and measure the effectiveness of their campaigns in real time.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>What graphic design services do you offer?</span>
+        
+            <div class="number-circle"> <button class="toggle-btn">+</button></div>
+        </div>
+        <div class="faq-answer">
+            <p>Digital marketing encompasses all marketing efforts that use the internet or an electronic device. It is important because it allows businesses to reach a larger audience, target specific demographics, and measure the effectiveness of their campaigns in real time.</p>
+        </div>
+    </div>
+
+
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>What is influencer marketing and how can it benefit my business?</span>
+        
+            <div class="number-circle"> <button class="toggle-btn">+</button></div>
+        </div>
+        <div class="faq-answer">
+            <p>Digital marketing encompasses all marketing efforts that use the internet or an electronic device. It is important because it allows businesses to reach a larger audience, target specific demographics, and measure the effectiveness of their campaigns in real time.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>Can you work with influencers on different social media platforms?</span>
+        
+            <div class="number-circle"> <button class="toggle-btn">+</button></div>
+        </div>
+        <div class="faq-answer">
+            <p>Digital marketing encompasses all marketing efforts that use the internet or an electronic device. It is important because it allows businesses to reach a larger audience, target specific demographics, and measure the effectiveness of their campaigns in real time.</p>
+        </div>
+    </div>
+</div>
+</div>
+  <!-- Router outlet for changing content of SERVICES -->
+  <div *ngIf="isDigitalMarketingRoute">
+    <router-outlet></router-outlet>
+  </div>
+  <div *ngIf="isConsultingRoute">
+    <router-outlet></router-outlet>
+</div>
+<div *ngIf="isGraphicsRoute">
+    <router-outlet></router-outlet>
+</div>
+<div *ngIf="isWebAppRoute">
+    <router-outlet></router-outlet>
+</div>
+<div *ngIf="isInfluencerRoute">
+    <router-outlet></router-outlet>
+</div>
+<!-- Router outlet for changing content of CAREES -->
+<div *ngIf="isTrainingRoute">
+   <router-outlet></router-outlet>
+</div>
+<div *ngIf="isInternshipRoute">
+   <router-outlet></router-outlet>
+</div>
+<div *ngIf="isJobOpportunityRoute">
+   <router-outlet></router-outlet>
+</div>
+<!-- Router outlet for changing content of PORTFOLIO -->
+<div *ngIf="isPortfolioRoute">
+   <router-outlet></router-outlet>
+</div>
+<!-- Router outlet for changing content of BLOGS -->
+<div *ngIf="isFutureBlogsRoute">
+   <router-outlet></router-outlet>
+</div>
+<!-- Router outlet for changing content of ABOUT US -->
+<div *ngIf="isAboutUsRoute">
+   <router-outlet></router-outlet>
+</div>
+<!-- Router outlet for changing content of CONSULT US -->
+<div *ngIf="isConsultUsRoute">
+   <router-outlet></router-outlet>
+</div>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-section">
+        <div class="column logo">
+            <img src="https://res.cloudinary.com/douitd8ad/image/upload/v1719987132/I_AM_DIGIPRO_colour_white_jqk6wa.png">
+        </div>
+        <div class="column">
+            <h3>About</h3>
+            <ul>
+                <li><a href="/about-us">About us</a></li>
+                <li><a href="consultsus.html">Contact us</a></li>
+                <li><a href="/blogs">Blog</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="/service/digital-marketing">Digital Marketing</a></li>
+                <li><a href="/service/web-app-development">Web Development</a></li>
+                <li><a href="/service/graphic-ui-design">Graphic Design</a></li>
+                <li><a href="/service/consulting">Consulting</a></li>
+                <li><a href="/service/influencer-market">Influencer Marketing</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h3>Careers</h3>
+            <ul>
+                <li><a href="/careers/training">Training</a></li>
+                <li><a href="careers/internship">Internship</a></li>
+                <li><a href="/careers/job-opportunity">Job Opportunities</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+<!-- jump button -->
+        
+    <div class="footer-right d-flex justify-content-end">
+        <a href="#" id="goTop" class="go-top"><i class="fa-solid fa-arrow-up-long"></i></a>
+    </div>
+   
+<div class="footer-bottom d-flex flex-row ">
+    <div class="copyright">
+        <!-- <li>@2024 IAM DIGIPRO</li> -->
+        <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+        <li>Cookies Policy</li>
+        <li><a href="termsOfUse.html">Terms of use</a></li>
+    </div>
+    <div class="footer-email">
+        <!-- <p><b>Email Us at:</b> info@iamdigipro.com</p> -->
+    </div>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/iam_digipro?igsh=MzRlODBiNWFlZA==" target="_blank" class="social-icon instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61560868171435" target="_blank" class="social-icon facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/iam-digipro-127123313/" target="_blank" class="social-icon linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://x.com/iamdigipro" target="_blank" class="social-icon linkedin"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.youtube.com/@IamDigitalPro/featured" target="_blank" class="social-icon linkedin"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+</div>  
+</footer>
+
+</body>
+</html>
+  

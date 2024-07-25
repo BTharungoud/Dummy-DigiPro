@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+         
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-m">
+<div class="modal-content">
+    <div class="modal-body" style="border-radius: 20px;">
+        <div class="modal-login">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa-solid fa-circle-xmark"></i></span>
+            </button>
+            <h1>Welcome back!</h1>
+            <p>Enter your username and password to log in to your admin panel</p>
+            <label>Email</label>
+            <input type="email" name="uname" placeholder="example@gmail.com" required/>
+            <label>Password</label>
+            <input type="password" name="psw" placeholder="Your Password" required/>
+            <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <button id="btn-login">Log in</button>
+            <button id="btn-g-login">Log in with Google</button>
+            <p>Don't have an account yet? <a data-toggle="modal" data-hide="#exampleModal" data-target="#exampleModal1"><b>Sign Up</b></a></p>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-m"> 
+<div class="modal-content">
+    <div class="modal-body" style="border-radius: 20px;">
+        <div class="modal-login">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa-solid fa-circle-xmark"></i></span>
+            </button>
+            <h1>Sign up</h1>
+            <p>Register to log in to your admin panel</p>
+            <label>Email</label>
+            <input type="email" name="uname" placeholder="example@gmail.com" required/>
+            <div class="signup-psw">
+            <div class="signup-password">
+                <label>Password</label>
+                <input type="password" name="psw" placeholder="Your Password" required/>
+                </div>
+                <div class="signup-confirm-password">
+                    <label>Confirm Password</label>
+                    <input type="password" name="psw" placeholder="Confirm Password" required/>
+                </div>
+            </div>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> I have read and accept terms and conditions
+                </label>
+                <button id="btn-login">Sign Up</button>
+                <button id="btn-g-login">Sign Up with Google</button>
+                <p>Have an account? <a data-toggle="modal" data-target="#exampleModal"><b>Sign in</b></a></p>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+    <section class="success-stories">
+        <div class="container-1">
+            <h1 class="head-1">Our Success Stories</h1>
+            <p class="para-1">Showcasing the Impact of IAM DIGIPRO's Expertise</p>
+         </div>
+    </section>
+    <div class="filters-container">
+        <div class="filters">
+            <button class="filter" onclick="showMode('all')" style="background-color: black; color: white;">All</button>
+            <button class="filter" onclick="showMode('social-media-post')">Social media Post</button>
+            <button class="filter" onclick="showMode('package-designing')">Package Designing</button>
+            <button class="filter" onclick="showMode('youtube-management')">School YouTube Channel Management</button>
+            <button class="filter" onclick="showMode('package-designing-updated')">Package Designing (updated)</button>
+            <button class="filter" onclick="showMode('restaurant-website')">Restaurant Website Development</button>
+            <button class="filter" onclick="showMode('digital-marketing')">Digital Marketing Strategy</button>
+        </div>
+    </div>
+
+    <div class="sub-container">
+        <div class="box-wrapper" data-mode="social-media-post">
+            <div class="box">
+                <div class="inner-box" onclick="socialmediapage()">
+                    <img src="https://res.cloudinary.com/dj9imzlbd/image/upload/v1720619404/social_1_o3scxl.jpg" alt="SocialMediaPostImage">
+                </div>
+            </div>
+            <div class="text-container">
+                <div class="title">Social media Post</div>
+                <div class="subtitle">Design</div>
+            </div>
+        </div>
+        <div class="box-wrapper" data-mode="package-designing">
+            <div class="box">
+                <div class="inner-box" onclick="packagedesign()">
+                    <img src="https://res.cloudinary.com/dj9imzlbd/image/upload/v1720679627/package_1_mi4dja.jpg" alt="PackageDesignImage">
+                </div>
+            </div>
+            <div class="text-container">
+                <div class="title">Package Designing</div>
+                <div class="subtitle">Design</div>
+            </div>
+        </div>
+        <div class="box-wrapper" data-mode="youtube-management">
+            <div class="box">
+                <div class="inner-box" onclick="youtubemanagement()">
+                    <img src="https://res.cloudinary.com/dj9imzlbd/image/upload/v1720679800/utube1_zgzjdv.jpg" alt="SchoolManagementImage">
+                </div>
+            </div>
+            <div class="text-container">
+                <div class="title">School YouTube Channel Management</div>
+                <div class="subtitle">Design</div>
+            </div>
+        </div>
+        <div class="box-wrapper" data-mode="package-designing-updated">
+            <div class="box">
+                <div class="inner-box" onclick="packageupdated()">
+                    <img src="https://res.cloudinary.com/dj9imzlbd/image/upload/v1720680552/package_2_qqp9p8.jpg" alt="packagedesigningImage">
+                </div>
+            </div>
+            <div class="text-container">
+                <div class="title">Package Designing (updated)</div>
+                <div class="subtitle">Design</div>
+            </div>
+        </div>
+        <div class="box-wrapper" data-mode="restaurant-website">
+            <div class="box">
+                <div class="inner-box" onclick="restaurantwebsite()">
+                    <img src="https://res.cloudinary.com/dj9imzlbd/image/upload/v1720680602/restuarant1_ufjpwh.jpg" alt="RestaurantWebsiteImage">
+                </div>
+            </div>
+            <div class="text-container">
+                <div class="title">Restaurant Website Development</div>
+                <div class="subtitle">Design</div>
+            </div>
+        </div>
+        <div class="box-wrapper" data-mode="digital-marketing">
+            <div class="box">
+                <div class="inner-box" onclick="dms()">
+                    <img src="https://res.cloudinary.com/dj9imzlbd/image/upload/v1720680643/digital1_nax88k.jpg" alt="DigitalMarketingStrategyImage">
+                </div>
+            </div>
+            <div class="text-container">
+                <div class="title">Digital Marketing Strategy</div>
+                <div class="subtitle">Design</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mid-container">
+        <div class="grid-item2">
+            <h1>You Request. <br>We Build!</h1>
+            <h2>We start every project by listening to understand your needs so we can give you the time, attention, and care you deserve.</h2>
+        </div>
+    </div>
+
+    <div>
+        <div class="content" id="section1" onclick="display1()">
+            <div class="sercives-container">
+                <div class="service-container1">
+                    <div class="service-container2">
+                        <i class="fa-solid fa-arrow-right arr-right rig"></i>
+                        <h1 class="service-heading">Services</h1>
+                        <h2 class="ser-hed">What we offer</h2>
+                    </div>
+                    <div class="card-ser-container">
+                        
+                        <div class="list-ser">
+                            <p class="ser-para">01</p>
+                            <h3 class="dig-head">Digital Marketing</h3>
+                            <p class="ser-par">We enhance your online presence and drive engagement through advanced SEO, social media, content marketing, and paid advertising strategies.</p>
+                            <div>
+                                <a href="SEOserviceKnowmorePage.html"><button class="btn-option">Search Engine Optimization</button></a>
+                                <a href="PPCKnowmorePage.html"><button class="btn-option">Pay-Per-Click</button></a>
+                                <a href="SocialmediaKnowmorePage.html"><button class="btn-option">Social Media Marketing</button></a>
+                                <a href="contentMarketingKnowmorePage.html"><button class="btn-option">Content Marketing</button></a>
+                                <a href="emailMarketingKnowmorePage.html"><button class="btn-option">Email Marketing</button></a>
+                            </div> 
+                            <div class="btn-container">
+                                <a href="digitalMarketingServicesPage.html"><button class="explore-button">Explore <i class="fa-solid fa-arrow-right arr-right right"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="explore-container">
+                    <div>
+                        <h2 class="ser-hed">What you get</h2>
+                        <img src="https://res.cloudinary.com/douitd8ad/image/upload/v1720602984/1_lcne5s.png" alt="digitalmarketingrevenue">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+          <div class="content" id="section2" onclick="display2()" style="display: none;">
+                <div class="sercives-container">
+                <div class="service-container1">
+                    <div class="service-container2">
+                        <i class="fa-solid fa-arrow-right arr-right rig"></i>
+                        <h1 class="service-heading">Services</h1>
+                        <h2 class="ser-hed">What we offer</h2>
+                    </div>
+                    <div class="card-ser-container">
+                        
+                        <div class="list-ser">
+                            <p class="ser-para">02</p>
+                            <h3 class="dig-head">Web/App 
+                                <br/>Development</h3>
+                                <p class="ser-par">We create responsive, user-friendly websites using the latest technologies to ensure they are fast, secure, and scalable.</p>
+                                <a href="frontendDesignKnowmorePage.html"><button class="btn-option">Frontend Developer</button></a>
+                                <a href="backendDesignKnowmorePage.html"><button class="btn-option">Backend Developer</button></a>
+                                <a href="FullstackKnowmorePage.html"><button class="btn-option">Full-stack Developer</button></a>
+                                <a href="appDevelopmentKnowmorePage.html"><button class="btn-option">App Developer</button></a>
+                                <div class="btn-container">
+                                    <a href="WebDevelopment.html"><button class="explore-button">Explore <i class="fa-solid fa-arrow-right arr-right right"></i></button></a>
+                                </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="explore-container section2">
+                    <div>
+                        <h2 class="ser-hed">What you get</h2>
+                        <img src="images/trendingservices.png" alt="trendingservices">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+            <div class="content" id="section3" onclick="display3()" style="display: none;">
+                <div class="sercives-container">
+                    <div class="service-container1">
+                        <div class="service-container2">
+                            <i class="fa-solid fa-arrow-right arr-right rig"></i>
+                            <h1 class="service-heading">Services</h1>
+                            <h2 class="ser-hed">What we offer</h2>
+                        </div>
+                        <div class="card-ser-container">
+                            
+                            <div class="list-ser">
+                                <p class="ser-para">03</p>
+                                <h3 class="dig-head">Graphic / UI 
+                                    <br/>Design</h3>
+                                    <p class="ser-par">Our graphic design services establish a strong brand identity with visually stunning, high-quality designs that captivate and engage your audience.</p>
+                                    <div>
+                                        <a href="brandingKnowmorePage.html"><button class="btn-option">Branding</button></a>
+                                        <a href="logodesignKnowmorePage.html"><button class="btn-option">Logo Design</button></a>
+                                        <a href="UI-UXKnowmorePage.html"><button class="btn-option">UI/UX Design</button></a>
+                                    </div>
+                                <div class="btn-container">
+                                    <a href="graphicDesign.html"><button class="explore-button">Explore <i class="fa-solid fa-arrow-right arr-right right"></i></button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explore-container section3">
+                        <div>
+                            <h2 class="ser-hed">What you get</h2>
+                            <img src="images/percentagebreakdown.png" alt="percentagebreakdown">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content" id="section4" onclick="display4()" style="display: none;">
+                <div class="sercives-container">
+                    <div class="service-container1">
+                        <div class="service-container2">
+                            <i class="fa-solid fa-arrow-right arr-right rig"></i>
+                            <h1 class="service-heading">Services</h1>
+                            <h2 class="ser-hed">What we offer</h2>
+                        </div>
+                        <div class="card-ser-container">
+                            
+                            <div class="list-ser">
+                                <p class="ser-para">04</p>
+                                <h3 class="dig-head">Consulting</h3>
+                                <p class="ser-par">Our consulting services offer expert advice and strategic insights to help with digital transformation, process optimization, and strategic planning.</p>
+                                <div>
+                                    <a href="businessStrategyKnowmorePage.html"><button class="btn-option">Business Strategy</button></a>
+                                    <a href="digitalTransformationKnowmorePage.html"><button class="btn-option">Digital Transformation</button></a>
+                                </div>
+                                <div class="btn-container">
+                                    <a href="consultingServices.html"><button class="explore-button">Explore <i class="fa-solid fa-arrow-right arr-right right"></i></button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explore-container section4">
+                        <div>
+                            <h2 class="ser-hed">What you get</h2>
+                            <img src="images/percentagebreakdownprojects.png" alt="percentagebreakdownprojects">
+                        </div>
+                        
+                    </div>
+                </div>
+              </div>
+              <div class="content" id="section5" onclick="display5()" style="display: none;">
+                <div class="sercives-container">
+                    <div class="service-container1">
+                        <div class="service-container2">
+                            <i class="fa-solid fa-arrow-right arr-right rig"></i>
+                            <h1 class="service-heading">Services</h1>
+                            <h2 class="ser-hed">What we offer</h2>
+                        </div>
+                        <div class="card-ser-container">
+                            
+                            <div class="list-ser">
+                                <p class="ser-para">05</p>
+                                <h3 class="dig-head">Influencer
+                                    <br/>Marketing</h3>
+                                    <p class="ser-par">We connect you with the right influencers to amplity your brand's message and reach a wider audience through data-driven, tailored strategies for maximum impact and ROl.</p>
+                                    <div>
+                                        <a href="campaignStrategyKnowmorePage.html"><button class="btn-option">Campaign Strategy</button></a>
+                                        <a href="influencerOutreachKnowmorePage.html"><button class="btn-option">Influencer Outreach</button></a>
+                                        <a href="brandKPartnershipnowmorePage.html"><button class="btn-option">Brand Partnership</button></a>
+                                        <a href="ContentCreationKnowmorePage.html"><button class="btn-option">Content Creating</button></a>
+                                    </div>
+                                <div class="btn-container">
+                                    <a href="influencerMarketingServices.html"><button class="explore-button">Explore <i class="fa-solid fa-arrow-right arr-right right"></i></button></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="explore-container section5">
+                        <div>
+                            <h2 class="ser-hed">What you get</h2>
+                            <img src="images/resultsfromclients.png" alt="resultsfromclients">
+                        </div>
+                    </div>
+                </div>
+              </div>
+  </div>
+</body>
+</html>
